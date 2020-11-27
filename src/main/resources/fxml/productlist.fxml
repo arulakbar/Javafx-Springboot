@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefWidth="600.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.JavafxSpringboot.controller.ProductController">
+   <children>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="600.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <JFXTextField labelFloat="true" prefHeight="25.0" prefWidth="188.0" promptText="Search">
+               <HBox.margin>
+                  <Insets left="10.0" top="60.0" />
+               </HBox.margin>
+            </JFXTextField>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="236.0" text="Product List" textAlignment="CENTER" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TableView fx:id="productTableView" editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="462.0" prefWidth="580.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="Product ID" />
+          <TableColumn fx:id="nameColumn" onEditCommit="#editNameColumn" prefWidth="75.0" text="Name" />
+            <TableColumn fx:id="priceColumn" onEditCommit="#editPriceColumn" prefWidth="209.0" text="Price" />
+            <TableColumn fx:id="deleteColumn" prefWidth="75.0" text="Delete" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+      </TableView>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="89.0" prefWidth="600.0" spacing="20.0">
+         <children>
+            <JFXTextField fx:id="idField" labelFloat="true" promptText="ID" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" top="30.0" />
+               </HBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="nameField" labelFloat="true" layoutX="10.0" layoutY="10.0" promptText="Name" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" top="30.0" />
+               </HBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="priceField" labelFloat="true" layoutX="315.0" layoutY="10.0" promptText="Price" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" top="30.0" />
+               </HBox.margin>
+            </JFXTextField>
+            <JFXButton fx:id="addProductBtn" alignment="CENTER" buttonType="RAISED" onAction="#addingProduct" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #00C853; -fx-background-radius: 15pt; -fx-border-radius: 15pt;" text="Add Product" textFill="WHITE" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" top="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</VBox>
