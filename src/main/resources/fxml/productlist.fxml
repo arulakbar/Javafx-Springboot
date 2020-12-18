@@ -60,7 +60,7 @@
                   <Insets left="20.0" right="20.0" top="30.0" />
                </HBox.margin>
             </JFXTextField>
-            <JFXButton fx:id="addProductBtn" alignment="CENTER" buttonType="RAISED" onAction="#addingProduct" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #00C853; -fx-background-radius: 15pt; -fx-border-radius: 15pt;" text="Add Product" textFill="WHITE" HBox.hgrow="ALWAYS">
+            <JFXButton fx:id="addProductBtn" alignment="CENTER" buttonType="RAISED" onAction="#addingProduct" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #00C853; -fx-background-radius: 5pt;" text="Add Product" textFill="WHITE" HBox.hgrow="ALWAYS">
                <HBox.margin>
                   <Insets left="20.0" right="20.0" top="30.0" />
                </HBox.margin>
