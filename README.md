@@ -1,2 +1,2 @@
 # Javafx-Springboot
-This is a test App. How i create a JavaFx with SpringBoot it's just a basic how CRUD work. and how switch between scene.
+The application frontend created using JavaFX and backend services are implemented using Spring Boot. The app demonstrate simple CRUD operation and switching between two scenes with Login and Main Dashboard view.
