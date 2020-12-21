@@ -3,5 +3,5 @@ The application frontend created using JavaFX and backend services are implement
 
 # Getting Started:
 1. Clone the project in your workspace using command - git clone https://github.com/Airuls/Javafx-Springboot.git
-2. Replace database properties with your setting
-3. Run with mvn 'spring-boot:run'
+2. Replace database properties with your setting.
+3. Run with "mvn spring-boot:run".
